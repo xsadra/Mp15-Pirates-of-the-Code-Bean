@@ -23,6 +23,7 @@ public class HomeController {
     String page() {
         return "home";
     }
+
     @PostMapping("/choose/{number}")
     String choose(@PathVariable Integer number){
         logic.next(number);
